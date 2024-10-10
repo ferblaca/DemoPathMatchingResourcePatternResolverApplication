@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: demoPathMatchingResourcePatternResolver
+demo:
+  regex: classpath*:/**/*.avsc
