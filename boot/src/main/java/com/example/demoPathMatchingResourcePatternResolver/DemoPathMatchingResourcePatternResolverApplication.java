@@ -31,6 +31,9 @@ public class DemoPathMatchingResourcePatternResolverApplication {
         return args -> {
             Resource[] resources = this.resourceResolver.getResources(regexPath);
             Arrays.stream(resources).forEach(resource -> LOG.info("Resource: {}", resource));
+            if (resources.length == 0) {
+                LOG.info("No resources found");
+            }
         };
     }
 
