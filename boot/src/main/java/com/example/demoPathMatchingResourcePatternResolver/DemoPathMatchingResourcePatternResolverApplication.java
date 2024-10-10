@@ -30,10 +30,12 @@ public class DemoPathMatchingResourcePatternResolverApplication {
     public ApplicationRunner applicationRunner() {
         return args -> {
             Resource[] resources = this.resourceResolver.getResources(regexPath);
-            Arrays.stream(resources).forEach(resource -> LOG.info("Resource: {}", resource));
+            LOG.info("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Arrays.stream(resources).forEach(resource -> LOG.info("++++++++++ Resource: {}", resource));
             if (resources.length == 0) {
-                LOG.info("No resources found");
+                LOG.info("++++++++++ NO RESOURCES FOUND!!!");
             }
+            LOG.info("+++++++++++++++++++++++++++++++++++++++++++++++++");
         };
     }
 

@@ -1,3 +1,7 @@
+logging:
+    level:
+        root: INFO
+        org.springframework.core.io.support: TRACE
 spring:
   application:
     name: demoPathMatchingResourcePatternResolver
